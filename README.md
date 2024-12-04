@@ -104,6 +104,14 @@
 - Generic Data Source Scraping
 - User Object & Document Query Languages
 
+### Technical Hard Pills To Swallow
+- Garbage Collection, Org Shuffle, Corporate Process, Monitoring Noise
+- User Data Metadata & Hyper Linking
+- Solution Design Cost Comparision
+- Browser Integrations
+- Supply Chain Protection & Controls
+
+
 ### Tooling & Services
 #### Preferred List
 - Grok
