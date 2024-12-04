@@ -42,7 +42,8 @@
 | OIDC                             |       |          |                                            |
 | AWS EBS PV Controller            |       |          |                                            |
 | Python                           | 4     |  3         |       |
-| Typescript                       | 3     |           4 |               | 
+| Typescript                       | 3     |           4 |               | 4|
+| Machine Learning | 0 | 4 | Needed for solution development & understanding howto evaluate vendor solutions |
 
 
 ## TODO
@@ -74,6 +75,7 @@
 | Controller Development & GOLANG |       |          |          |             |         |
 | Resource Quota       |       |          |          |             |         |
 | K8s Service Discovery |   2    |     3     |          |             |         |
+| Browser UI Frontend Framework | 0 | 5 | Need to look around here to select something "modern".  Django likely stale. |2024-12-16 ||
 
 ## Market
 ### In Demand
