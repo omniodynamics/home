@@ -90,6 +90,8 @@
 - Legal Policy Enforcement
 - Request Proxying
 - Async User Task Execution
+- User Document Templating
+- User Workflow Collaboration
 
 ### Common Features
 - User IAM
