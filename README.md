@@ -1,21 +1,19 @@
 # Omnio Dynamics Incorporated
-- Projects home for [Ryan Warren](https://github.com/ryancwarren).
-- Main goal is to demo / test / study DevOps & SRE skills.
-- Secondary goal is to prototype demo's and help create **proposals** for RFIs / RFPs.
-- Last updated on Dec 12, 2024.  Next update Dec 8/9 2024.
+
 
 ## Repositories
-- [home](https://github.com/omniodynamics/home) - Site Index
-- [scratch](https://github.com/omniodynamics/scratch) - Junk Drawer
-- [env-odi-dev](https://github.com/omniodynamics/env-odi-dev) - Corporation Platform Prototyping
-- [botkit](https://github.com/omniodynamics/botkit) - R&D, tooling, scripts
-- [service-user](https://github.com/omniodynamics/service-user) - Test Service
-- [service-order](https://github.com/omniodynamics/service-order) - Test Service
-- [env-cicd-dev](https://github.com/omniodynamics/env-cicd-dev) - Pipeline Patterns Prototyping
+- [odinet.ca](https://github.com/omniodynamics/odinet.ca) - CA Cluster
+- [odinet.me](https://github.com/omniodynamics/odinet.me) - IAM
+- [odinet.run](https://github.com/omniodynamics/odinet.run) - Runtime, Operations, State
+- [odinet.sh](https://github.com/omniodynamics/odinet.sh) - Control Nodes, Source, IaC
+- [odinet.pub](https://github.com/omniodynamics/odinet.pub) - Public Cluster
+- [odinet.work](https://github.com/omniodynamics/odinet.work) - Queue, Scheduling, Orchestration
+- [omniodynamics](https://github.com/omniodynamics/omniodynamics) - Corporate\
+
 
 ## Skills
 
-| Skill                | Score | Priority | Comments                                   |
+| Skill                             | Score | Priority |     Comments                                   |
 |---------------------------------|-------|----------|--------------------------------------------|
 | Step Functions                  | 1     | 1        | Stateful workflows that integrate well across AWS. |
 | Lambda                           | 2     | 2        | User defined tasks, "SaaS-Light"           |
@@ -26,10 +24,10 @@
 | Kubectl Port Forward             |       |          |                                            |
 | Kubectl Proxy                    |       |          |                                            |
 | End User Messaging               |       |          |                                            |
-| CICD Githubs Base                |       |          |                                            |
-| Generic Microservice Feature Pattern |       |          |                                            |
-| Traffic Transforming             |       |          |                                            |
-| Github Workflow Mocking, Act     |       |          |                                            |
+| CICD Githubs Base                |   3    | 4          |                                            |
+| Generic Microservice Feature Pattern |  2     |    1      |                                            |
+| Traffic Transforming             |     3  |      1    |                                            |
+| Github Workflow Mocking, Act     |    3   |      3    |                                            |
 | PVC, VP, SS                      |       |          |                                            |
 | Deployments, DaemonSet           |       |          |                                            |
 | NetworkPolicy                    |       |          |                                            |
@@ -111,7 +109,6 @@
 - Browser Integrations
 - Supply Chain Protection & Controls
 
-
 ### Tooling & Services
 #### Preferred List
 - Grok
@@ -142,4 +139,50 @@
 
 #### Terrible
 - GoDaddy
+
+# History
+
+## December, 2024
+- Renamed repos.  Post-GoDaddy blunder, registered a bunch of odinet.* domains.
+- NGINX, proxying, SSL-insepection.
+- Typescript, MVC generics source dev, async fundamentals.
+- Self-Signed CA Server
+    - NGINX Exposes https://odinet.sh/crl/crl.pem (Revocation Lists)
+    - /etc/nginx/sites-enabled (symlink to) /etc/nginx/sites-available (CRL Server)
+    - Let's Encrypt ACME (certbot) Analog
+        - Prototype off-of ACME to develop a Certificate Authority server / service.
+        - Hosts API for user's to register accounts, perform certmgmt ops.
+    - Attempted SSL Inspection
+        - CSP Issues, Browser XSS Defaults
+        - CA Signing Tooling Resolution
+            - SSL Tangents
+- Proxy Server
+    - Generic TCP/UDP Proxy Server
+- Frontend Framework & APIs Prototyping
+    - Vue.js Abstracts Fundamental Internals (XSS, Cluster-Needed-Knowledge)
+    - Javascript (ES2017?)
+        - Fetch
+        - Local Storage
+        - Web Sockets
+        - XHTTP (older)
+    - Custom Handling MVC Means Refresher On Browser JS
+- Typescript Generics
+    - Quick MVC (interface model, view methods, controller + DAO)
+    - Sqlite3, Mongo Testing
+
+> Overall, working on creating servers, containers, learning the tooling, to allow me to create a DevOps / SRE Platform.  
+
+- Botkit OPS CLI Tool
+- Docker
+- Github Actions, Github CLI (gh)
+- Git Commit Signing (gnupg)
+- Openssl Tools & Config
+- NGINX Config
+- Debian-Based OS Certificates & Trust (ca-certificates, update-ca-certificates)
+
+## November, 2024
+- Projects home for [Ryan Warren](https://github.com/ryancwarren).
+- Main goal is to demo / test / study DevOps & SRE skills.
+- Secondary goal is to prototype demo's and help create **proposals** for RFIs / RFPs.
+- Last updated on Dec 12, 2024.  Next update Dec 8/9 2024.
 
